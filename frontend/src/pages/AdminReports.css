@@ -1,0 +1,202 @@
+.admin-reports-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  padding: 30px;
+}
+
+.reports-page-header {
+  margin-bottom: 30px;
+}
+
+.reports-page-header h1 {
+  margin: 15px 0 6px;
+  font-size: 30px;
+  color: #111827;
+}
+
+.reports-page-header p {
+  margin: 0;
+  color: #6b7280;
+}
+
+.back-dashboard-btn {
+  border: none;
+  background: transparent;
+  color: #2563eb;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+
+.report-section {
+  margin-bottom: 30px;
+}
+
+.report-section h2 {
+  margin: 0 0 15px;
+  font-size: 20px;
+  color: #111827;
+}
+
+.report-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.report-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.report-card > span {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  background: #eff6ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.report-card strong {
+  display: block;
+  font-size: 26px;
+  color: #111827;
+}
+
+.report-card p {
+  margin: 4px 0 0;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.status-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.status-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+.status-card strong {
+  display: block;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.status-card span {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.status-card.pending strong,
+.status-card.pending span {
+  color: #ea580c;
+}
+
+.status-card.shortlisted strong,
+.status-card.shortlisted span {
+  color: #2563eb;
+}
+
+.status-card.accepted strong,
+.status-card.accepted span {
+  color: #059669;
+}
+
+.status-card.rejected strong,
+.status-card.rejected span {
+  color: #dc2626;
+}
+
+.status-card.total strong,
+.status-card.total span {
+  color: #7c3aed;
+}
+
+.evaluation-summary {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.evaluation-summary-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 22px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.evaluation-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background: #fffbeb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.evaluation-summary-card strong {
+  display: block;
+  font-size: 25px;
+  color: #111827;
+}
+
+.evaluation-summary-card p {
+  margin: 4px 0 0;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+  .report-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .status-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .admin-reports-page {
+    padding: 20px 15px;
+  }
+
+  .reports-page-header h1 {
+    font-size: 25px;
+  }
+
+  .report-cards,
+  .status-grid,
+  .evaluation-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .report-card,
+  .status-card,
+  .evaluation-summary-card {
+    padding: 18px;
+  }
+}

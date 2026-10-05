@@ -1,0 +1,365 @@
+/* =========================================
+   INTERNSHIP DETAILS PAGE
+   Final UI Polish
+   ========================================= */
+
+.internship-details-page {
+  min-height: 100vh;
+  padding: 50px 7%;
+  background:
+    radial-gradient(
+      circle at 5% 5%,
+      rgba(37, 99, 235, 0.04),
+      transparent 25%
+    ),
+    #f5f7fb;
+}
+
+.details-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* =========================================
+   BACK LINK
+   ========================================= */
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 20px;
+  color: #2563eb;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.back-link:hover {
+  color: #1d4ed8;
+  transform: translateX(-2px);
+}
+
+/* =========================================
+   DETAILS CARD
+   ========================================= */
+
+.details-card {
+  background: #ffffff;
+  padding: 40px;
+  border: 1px solid #e5e7eb;
+  border-radius: 15px;
+  box-shadow: 0 7px 25px rgba(15, 23, 42, 0.07);
+}
+
+/* =========================================
+   DETAILS HEADER
+   ========================================= */
+
+.details-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.details-logo {
+  width: 76px;
+  height: 76px;
+  min-width: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #eff6ff, #dbeafe);
+  color: #2563eb;
+  border: 1px solid #bfdbfe;
+  font-size: 30px;
+  font-weight: 800;
+  border-radius: 13px;
+}
+
+.details-header h1 {
+  margin: 0 0 8px;
+  color: #172554;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.details-header p {
+  margin: 0;
+  color: #475569;
+  font-size: 16px;
+  font-weight: 650;
+}
+
+/* =========================================
+   INFORMATION BOXES
+   ========================================= */
+
+.details-info {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.info-box {
+  min-width: 0;
+  padding: 18px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.info-box:hover {
+  border-color: #bfdbfe;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 14px rgba(15, 23, 42, 0.06);
+}
+
+.info-box span {
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.info-box strong {
+  color: #1e293b;
+  font-size: 15px;
+  font-weight: 750;
+  word-break: break-word;
+}
+
+/* =========================================
+   DETAILS SECTIONS
+   ========================================= */
+
+.details-section {
+  margin-top: 30px;
+}
+
+.details-section h2 {
+  margin: 0 0 13px;
+  color: #1e3a8a;
+  font-size: 21px;
+  font-weight: 750;
+}
+
+.details-section p {
+  margin: 0;
+  color: #475569;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.details-section ul {
+  margin: 0;
+  padding-left: 21px;
+}
+
+.details-section li {
+  margin-bottom: 9px;
+  color: #475569;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.details-section li::marker {
+  color: #2563eb;
+}
+
+/* =========================================
+   APPLY SECTION
+   ========================================= */
+
+.apply-section {
+  margin-top: 38px;
+  padding-top: 28px;
+  border-top: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.apply-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 190px;
+  padding: 14px 30px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid #2563eb;
+  border-radius: 9px;
+  font-size: 15px;
+  font-weight: 700;
+  box-shadow: 0 5px 15px rgba(37, 99, 235, 0.18);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.apply-btn:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+/* =========================================
+   NOT FOUND
+   ========================================= */
+
+.not-found {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  text-align: center;
+}
+
+.not-found h2 {
+  margin: 0;
+  color: #1e3a8a;
+  font-size: 25px;
+}
+
+.not-found a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 650;
+}
+
+.not-found a:hover {
+  text-decoration: underline;
+}
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
+  .internship-details-page {
+    padding: 42px 5%;
+  }
+
+  .details-info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .details-header h1 {
+    font-size: 26px;
+  }
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+  .internship-details-page {
+    padding: 30px 15px;
+  }
+
+  .details-card {
+    padding: 25px 20px;
+    border-radius: 13px;
+  }
+
+  .details-header {
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .details-logo {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    font-size: 24px;
+    border-radius: 11px;
+  }
+
+  .details-header h1 {
+    font-size: 22px;
+    line-height: 1.3;
+  }
+
+  .details-header p {
+    font-size: 14px;
+  }
+
+  .details-info {
+    grid-template-columns: 1fr;
+    gap: 11px;
+    margin: 25px 0;
+  }
+
+  .info-box {
+    padding: 15px;
+  }
+
+  .details-section {
+    margin-top: 25px;
+  }
+
+  .details-section h2 {
+    font-size: 19px;
+  }
+
+  .details-section p,
+  .details-section li {
+    font-size: 14px;
+  }
+
+  .apply-section {
+    margin-top: 30px;
+    padding-top: 23px;
+  }
+
+  .apply-btn {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+   ========================================= */
+
+@media (max-width: 380px) {
+  .internship-details-page {
+    padding: 25px 12px;
+  }
+
+  .details-card {
+    padding: 22px 15px;
+  }
+
+  .details-header {
+    gap: 11px;
+  }
+
+  .details-logo {
+    width: 54px;
+    height: 54px;
+    min-width: 54px;
+    font-size: 21px;
+  }
+
+  .details-header h1 {
+    font-size: 19px;
+  }
+}

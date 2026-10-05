@@ -1,0 +1,448 @@
+/* ================================
+   FACULTY INTERNSHIPS PAGE
+================================ */
+
+.faculty-internships-page {
+  min-height: 100vh;
+  background: #f4f7fb;
+  color: #172033;
+  padding-bottom: 50px;
+}
+
+/* ================================
+   HEADER
+================================ */
+
+.faculty-internships-header {
+  background: #ffffff;
+  padding: 24px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5eaf1;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.faculty-internships-header h1 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 750;
+  color: #172033;
+}
+
+.faculty-internships-header p {
+  margin: 7px 0 0;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+/* Dashboard Button */
+
+.faculty-back-btn {
+  border: none;
+  background: #172033;
+  color: white;
+  padding: 11px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.faculty-back-btn:hover {
+  background: #273552;
+  transform: translateY(-2px);
+}
+
+/* ================================
+   MESSAGES
+================================ */
+
+.faculty-success-message,
+.faculty-error-message {
+  width: 88%;
+  max-width: 1250px;
+  margin: 22px auto 0;
+  padding: 14px 18px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.faculty-success-message {
+  background: #ecfdf3;
+  color: #087443;
+  border: 1px solid #bbf7d0;
+}
+
+.faculty-error-message {
+  background: #fff1f2;
+  color: #b42318;
+  border: 1px solid #fecdd3;
+}
+
+/* ================================
+   FORM CARD
+================================ */
+
+.faculty-internship-form-card {
+  width: 88%;
+  max-width: 1250px;
+  margin: 28px auto 0;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 30px;
+  border: 1px solid #e6eaf0;
+  box-shadow: 0 8px 30px rgba(23, 32, 51, 0.07);
+}
+
+.faculty-internship-form-card h2 {
+  margin: 0 0 25px;
+  font-size: 21px;
+  color: #172033;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.faculty-internship-form-card h2::before {
+  content: "＋";
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eef2ff;
+  color: #4f46e5;
+  font-size: 22px;
+}
+
+/* ================================
+   FORM GRID
+================================ */
+
+.faculty-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.faculty-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.faculty-full-width {
+  grid-column: 1 / -1;
+}
+
+.faculty-form-group label {
+  font-size: 14px;
+  font-weight: 650;
+  margin-bottom: 8px;
+  color: #344054;
+}
+
+.faculty-form-group input,
+.faculty-form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #d8dee8;
+  background: #fbfcfe;
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 14px;
+  color: #172033;
+  outline: none;
+  transition: 0.2s ease;
+  font-family: inherit;
+}
+
+.faculty-form-group input {
+  height: 46px;
+}
+
+.faculty-form-group textarea {
+  resize: vertical;
+  min-height: 105px;
+}
+
+.faculty-form-group input::placeholder,
+.faculty-form-group textarea::placeholder {
+  color: #98a2b3;
+}
+
+.faculty-form-group input:focus,
+.faculty-form-group textarea:focus {
+  border-color: #6366f1;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.10);
+}
+
+/* ================================
+   CREATE BUTTON
+================================ */
+
+.faculty-create-btn {
+  margin-top: 25px;
+  border: none;
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: white;
+  padding: 13px 26px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s ease;
+  box-shadow: 0 6px 18px rgba(79, 70, 229, 0.22);
+}
+
+.faculty-create-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 9px 24px rgba(79, 70, 229, 0.30);
+}
+
+/* ================================
+   EXISTING INTERNSHIPS
+================================ */
+
+.faculty-internships-list {
+  width: 88%;
+  max-width: 1250px;
+  margin: 42px auto 0;
+}
+
+.faculty-internships-list > h2 {
+  margin: 0 0 20px;
+  font-size: 22px;
+  color: #172033;
+}
+
+.faculty-internships-list > p {
+  color: #667085;
+}
+
+/* ================================
+   INTERNSHIP GRID
+================================ */
+
+.faculty-internship-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+/* ================================
+   INTERNSHIP CARD
+================================ */
+
+.faculty-internship-card {
+  background: #ffffff;
+  border: 1px solid #e6eaf0;
+  border-radius: 17px;
+  padding: 22px;
+  box-shadow: 0 7px 24px rgba(23, 32, 51, 0.06);
+  transition: 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.faculty-internship-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #4f46e5, #8b5cf6);
+}
+
+.faculty-internship-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 32px rgba(23, 32, 51, 0.11);
+  border-color: #d5d9ff;
+}
+
+/* ================================
+   CARD HEADER
+================================ */
+
+.faculty-internship-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.faculty-internship-card-header h3 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.35;
+  color: #172033;
+}
+
+/* ================================
+   STATUS
+================================ */
+
+.faculty-status {
+  flex-shrink: 0;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 750;
+  text-transform: capitalize;
+}
+
+/* Approved */
+
+.faculty-status.approved {
+  background: #ecfdf3;
+  color: #087443;
+}
+
+/* Pending */
+
+.faculty-status.pending {
+  background: #fff7e6;
+  color: #b54708;
+}
+
+/* Rejected */
+
+.faculty-status.rejected {
+  background: #fff1f2;
+  color: #b42318;
+}
+
+/* ================================
+   CARD DETAILS
+================================ */
+
+.faculty-internship-card p {
+  margin: 11px 0;
+  font-size: 13.5px;
+  color: #667085;
+  line-height: 1.5;
+}
+
+.faculty-internship-card p strong {
+  color: #344054;
+  font-weight: 650;
+}
+
+/* ================================
+   SPECIAL DETAILS
+================================ */
+
+.faculty-internship-card p:nth-of-type(4),
+.faculty-internship-card p:nth-of-type(5) {
+  display: inline-block;
+  width: calc(50% - 7px);
+  box-sizing: border-box;
+  background: #f8f9fc;
+  padding: 11px;
+  border-radius: 9px;
+  margin-top: 7px;
+}
+
+.faculty-internship-card p:nth-of-type(4) {
+  margin-right: 10px;
+}
+
+/* ================================
+   RESPONSIVE - TABLET
+================================ */
+
+@media (max-width: 1000px) {
+
+  .faculty-internship-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .faculty-internships-header {
+    padding: 22px 5%;
+  }
+
+  .faculty-internship-form-card,
+  .faculty-internships-list,
+  .faculty-success-message,
+  .faculty-error-message {
+    width: 90%;
+  }
+}
+
+/* ================================
+   RESPONSIVE - MOBILE
+================================ */
+
+@media (max-width: 700px) {
+
+  .faculty-internships-header {
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .faculty-internships-header h1 {
+    font-size: 25px;
+  }
+
+  .faculty-back-btn {
+    width: 100%;
+  }
+
+  .faculty-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .faculty-full-width {
+    grid-column: auto;
+  }
+
+  .faculty-internship-form-card {
+    padding: 22px;
+  }
+
+  .faculty-internship-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .faculty-internships-list {
+    margin-top: 32px;
+  }
+}
+
+/* ================================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 420px) {
+
+  .faculty-internships-header h1 {
+    font-size: 22px;
+  }
+
+  .faculty-internship-form-card {
+    padding: 18px;
+  }
+
+  .faculty-internship-card {
+    padding: 18px;
+  }
+
+  .faculty-internship-card-header {
+    flex-direction: column;
+  }
+
+  .faculty-internship-card p:nth-of-type(4),
+  .faculty-internship-card p:nth-of-type(5) {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+  }
+}

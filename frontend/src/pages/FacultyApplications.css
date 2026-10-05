@@ -1,0 +1,408 @@
+/* =================================
+   FACULTY APPLICATIONS PAGE
+================================= */
+
+.faculty-applications-page {
+  min-height: 100vh;
+  background: #f4f7fb;
+  color: #172033;
+  padding-bottom: 50px;
+}
+
+/* =================================
+   HEADER
+================================= */
+
+.faculty-applications-header {
+  background: #ffffff;
+  padding: 24px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5eaf1;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.faculty-applications-header h1 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 750;
+  color: #172033;
+}
+
+.faculty-applications-header p {
+  margin: 7px 0 0;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+/* Dashboard button */
+
+.faculty-back-btn {
+  border: none;
+  background: #172033;
+  color: #ffffff;
+  padding: 11px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.faculty-back-btn:hover {
+  background: #273552;
+  transform: translateY(-2px);
+}
+
+/* =================================
+   SUCCESS / ERROR
+================================= */
+
+.faculty-success-message,
+.faculty-error-message {
+  width: 88%;
+  max-width: 1350px;
+  margin: 22px auto 0;
+  padding: 14px 18px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.faculty-success-message {
+  background: #ecfdf3;
+  color: #087443;
+  border: 1px solid #bbf7d0;
+}
+
+.faculty-error-message {
+  background: #fff1f2;
+  color: #b42318;
+  border: 1px solid #fecdd3;
+}
+
+/* =================================
+   MAIN CONTAINER
+================================= */
+
+.faculty-applications-container {
+  width: 88%;
+  max-width: 1350px;
+  margin: 30px auto 0;
+}
+
+/* =================================
+   TABLE WRAPPER
+================================= */
+
+.faculty-applications-table-wrapper {
+  background: #ffffff;
+  border: 1px solid #e5eaf1;
+  border-radius: 18px;
+  overflow-x: auto;
+  box-shadow: 0 8px 30px rgba(23, 32, 51, 0.07);
+}
+
+/* =================================
+   TABLE
+================================= */
+
+.faculty-applications-table {
+  width: 100%;
+  min-width: 1150px;
+  border-collapse: collapse;
+}
+
+.faculty-applications-table thead {
+  background: #f8f9fc;
+}
+
+.faculty-applications-table th {
+  padding: 17px 16px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 750;
+  color: #475467;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  border-bottom: 1px solid #e5eaf1;
+  white-space: nowrap;
+}
+
+.faculty-applications-table td {
+  padding: 17px 16px;
+  font-size: 13.5px;
+  color: #667085;
+  border-bottom: 1px solid #edf0f4;
+  vertical-align: middle;
+}
+
+/* =================================
+   TABLE ROW
+================================= */
+
+.faculty-applications-table tbody tr {
+  transition: 0.2s ease;
+}
+
+.faculty-applications-table tbody tr:hover {
+  background: #f9faff;
+}
+
+.faculty-applications-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* =================================
+   STUDENT NAME
+================================= */
+
+.faculty-applications-table td strong {
+  color: #172033;
+  font-weight: 700;
+}
+
+/* =================================
+   APPLICATION ID
+================================= */
+
+.faculty-applications-table td:first-child {
+  font-weight: 700;
+  color: #4f46e5;
+}
+
+/* =================================
+   STATUS BADGES
+================================= */
+
+.faculty-application-status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 82px;
+  padding: 6px 11px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 750;
+}
+
+/* Pending */
+
+.faculty-application-status.pending {
+  background: #fff7e6;
+  color: #b54708;
+}
+
+/* Shortlisted */
+
+.faculty-application-status.shortlisted {
+  background: #eef4ff;
+  color: #175cd3;
+}
+
+/* Accepted */
+
+.faculty-application-status.accepted {
+  background: #ecfdf3;
+  color: #087443;
+}
+
+/* Rejected */
+
+.faculty-application-status.rejected {
+  background: #fff1f2;
+  color: #b42318;
+}
+
+/* Withdrawn */
+
+.faculty-application-status.withdrawn {
+  background: #f2f4f7;
+  color: #475467;
+}
+
+/* =================================
+   ACTION BUTTONS
+================================= */
+
+.faculty-action-buttons {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  white-space: nowrap;
+}
+
+.faculty-action-buttons button {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+/* Shortlist */
+
+.faculty-shortlist-btn {
+  background: #eef4ff;
+  color: #175cd3;
+}
+
+.faculty-shortlist-btn:hover {
+  background: #dbe8ff;
+  transform: translateY(-1px);
+}
+
+/* Reject */
+
+.faculty-reject-btn {
+  background: #fff1f2;
+  color: #b42318;
+}
+
+.faculty-reject-btn:hover {
+  background: #ffe1e5;
+  transform: translateY(-1px);
+}
+
+/* Accept */
+
+.faculty-accept-btn {
+  background: #ecfdf3;
+  color: #087443;
+}
+
+.faculty-accept-btn:hover {
+  background: #d9f9e7;
+  transform: translateY(-1px);
+}
+
+/* =================================
+   COMPLETED TEXT
+================================= */
+
+.faculty-completed-text {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 11px;
+  border-radius: 8px;
+  background: #f2f4f7;
+  color: #667085;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* =================================
+   LOADING
+================================= */
+
+.faculty-loading-text {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 40px;
+  text-align: center;
+  color: #667085;
+  border: 1px solid #e5eaf1;
+  box-shadow: 0 6px 20px rgba(23, 32, 51, 0.05);
+}
+
+/* =================================
+   EMPTY STATE
+================================= */
+
+.faculty-empty-state {
+  background: #ffffff;
+  border: 1px solid #e5eaf1;
+  border-radius: 18px;
+  padding: 65px 25px;
+  text-align: center;
+  box-shadow: 0 7px 25px rgba(23, 32, 51, 0.06);
+}
+
+.faculty-empty-state::before {
+  content: "📋";
+  display: block;
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.faculty-empty-state h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #172033;
+}
+
+.faculty-empty-state p {
+  margin: 8px 0 0;
+  color: #667085;
+}
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 1000px) {
+
+  .faculty-applications-header {
+    padding: 22px 5%;
+  }
+
+  .faculty-applications-container,
+  .faculty-success-message,
+  .faculty-error-message {
+    width: 90%;
+  }
+}
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 700px) {
+
+  .faculty-applications-header {
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .faculty-applications-header h1 {
+    font-size: 25px;
+  }
+
+  .faculty-back-btn {
+    width: 100%;
+  }
+
+  .faculty-applications-container {
+    width: 92%;
+    margin-top: 22px;
+  }
+
+  .faculty-applications-table-wrapper {
+    border-radius: 14px;
+  }
+
+  .faculty-applications-table {
+    min-width: 1100px;
+  }
+}
+
+/* =================================
+   SMALL MOBILE
+================================= */
+
+@media (max-width: 420px) {
+
+  .faculty-applications-header h1 {
+    font-size: 22px;
+  }
+
+  .faculty-success-message,
+  .faculty-error-message {
+    width: 90%;
+  }
+}

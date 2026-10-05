@@ -1,0 +1,251 @@
+/* =========================================
+   MAIN NAVBAR
+   ========================================= */
+
+.navbar {
+  width: 100%;
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6%;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.06);
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1000;
+}
+
+/* =========================================
+   LOGO
+   ========================================= */
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
+  flex-shrink: 0;
+}
+
+.logo-icon {
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  border-radius: 12px;
+  font-size: 24px;
+  box-shadow: 0 5px 14px rgba(37, 99, 235, 0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.navbar-logo:hover .logo-icon {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 18px rgba(37, 99, 235, 0.30);
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.logo-text span {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1e3a8a;
+  letter-spacing: -0.2px;
+}
+
+.logo-text small {
+  margin-top: 3px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #64748b;
+}
+
+/* =========================================
+   NAVIGATION LINKS
+   ========================================= */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-links a {
+  position: relative;
+  padding: 10px 14px;
+  text-decoration: none;
+  color: #475569;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 9px;
+  transition:
+    color 0.25s ease,
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.nav-links a:hover {
+  color: #2563eb;
+  background: #eff6ff;
+  transform: translateY(-1px);
+}
+
+/* =========================================
+   ACTIVE LINK
+   ========================================= */
+
+.nav-links a.active {
+  color: #2563eb;
+  background: #eff6ff;
+}
+
+.nav-links a.active::after {
+  content: "";
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 4px;
+  height: 2px;
+  background: #2563eb;
+  border-radius: 5px;
+}
+
+/* =========================================
+   LOGIN BUTTON
+   ========================================= */
+
+.login-link {
+  border: 1px solid #2563eb;
+  color: #2563eb !important;
+  margin-left: 5px;
+}
+
+.login-link:hover {
+  background: #2563eb !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.20);
+}
+
+/* =========================================
+   REGISTER BUTTON
+   ========================================= */
+
+.register-link {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8) !important;
+  color: #ffffff !important;
+  padding: 10px 18px !important;
+  border-radius: 9px !important;
+  margin-left: 3px;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.20);
+}
+
+.register-link:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 15px rgba(37, 99, 235, 0.28);
+}
+
+/* =========================================
+   MOBILE RESPONSIVE
+   ========================================= */
+
+@media (max-width: 768px) {
+  .navbar {
+    min-height: auto;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px 15px;
+  }
+
+  .navbar-logo {
+    justify-content: center;
+  }
+
+  .logo-icon {
+    width: 42px;
+    height: 42px;
+    font-size: 21px;
+  }
+
+  .logo-text span {
+    font-size: 16px;
+  }
+
+  .logo-text small {
+    font-size: 11px;
+  }
+
+  .nav-links {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 7px;
+  }
+
+  .nav-links a {
+    padding: 8px 11px;
+    font-size: 13px;
+  }
+
+  .nav-links a.active::after {
+    left: 11px;
+    right: 11px;
+  }
+
+  .login-link {
+    margin-left: 0;
+  }
+
+  .register-link {
+    padding: 8px 14px !important;
+    margin-left: 0;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+   ========================================= */
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 14px 10px;
+    gap: 14px;
+  }
+
+  .logo-text span {
+    font-size: 14px;
+  }
+
+  .logo-text small {
+    font-size: 10px;
+  }
+
+  .logo-icon {
+    width: 38px;
+    height: 38px;
+    font-size: 19px;
+  }
+
+  .nav-links {
+    gap: 5px;
+  }
+
+  .nav-links a {
+    padding: 7px 9px;
+    font-size: 12px;
+  }
+
+  .register-link {
+    padding: 7px 12px !important;
+  }
+}

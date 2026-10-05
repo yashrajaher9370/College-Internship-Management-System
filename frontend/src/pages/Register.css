@@ -1,0 +1,222 @@
+/* =========================================
+   REGISTER PAGE
+   Compact Professional UI
+   ========================================= */
+
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  background:
+    radial-gradient(
+      circle at 10% 10%,
+      rgba(37, 99, 235, 0.06),
+      transparent 28%
+    ),
+    #f5f7fb;
+}
+
+.register-container {
+  width: 100%;
+  max-width: 500px;
+  background: #ffffff;
+  padding: 28px 32px;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  box-shadow: 0 7px 25px rgba(15, 23, 42, 0.08);
+}
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.register-header {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.register-header h1 {
+  margin: 0 0 6px;
+  color: #172554;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.register-header p {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+/* =========================================
+   FORM
+   ========================================= */
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-row {
+  display: flex;
+  gap: 14px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  color: #334155;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  height: 42px;
+  padding: 9px 11px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #1e293b;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.form-group input::placeholder {
+  color: #94a3b8;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.09);
+}
+
+/* =========================================
+   REGISTER BUTTON
+   ========================================= */
+
+.register-submit {
+  width: 100%;
+  height: 43px;
+  padding: 10px;
+  margin-top: 3px;
+  border: 1px solid #2563eb;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.16);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.register-submit:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 15px rgba(37, 99, 235, 0.22);
+}
+
+/* =========================================
+   LOGIN / BACK HOME
+   ========================================= */
+
+.login-text {
+  text-align: center;
+  margin: 18px 0 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.login-text a {
+  color: #2563eb;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.login-text a:hover {
+  text-decoration: underline;
+}
+
+.back-home {
+  display: block;
+  text-align: center;
+  margin-top: 12px;
+  color: #64748b;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.back-home:hover {
+  color: #2563eb;
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+  .register-page {
+    padding: 25px 15px;
+    align-items: flex-start;
+  }
+
+  .register-container {
+    max-width: 100%;
+    margin-top: 20px;
+    padding: 24px 20px;
+    border-radius: 12px;
+  }
+
+  .register-header {
+    margin-bottom: 20px;
+  }
+
+  .register-header h1 {
+    font-size: 24px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .register-form {
+    gap: 14px;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+   ========================================= */
+
+@media (max-width: 380px) {
+  .register-container {
+    padding: 22px 16px;
+  }
+
+  .register-header h1 {
+    font-size: 22px;
+  }
+}

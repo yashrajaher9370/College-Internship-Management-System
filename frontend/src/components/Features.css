@@ -1,0 +1,170 @@
+/* =========================================
+   FEATURES SECTION
+   ========================================= */
+
+.features {
+  padding: 80px 7%;
+  text-align: center;
+  background: #f8fafc;
+}
+
+/* =========================================
+   SECTION TITLE
+   ========================================= */
+
+.features h2 {
+  margin-bottom: 45px;
+  color: #0f172a;
+  font-size: 34px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+/* =========================================
+   FEATURE CONTAINER
+   ========================================= */
+
+.feature-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/* =========================================
+   FEATURE CARD
+   ========================================= */
+
+.feature-card {
+  width: 300px;
+  min-height: 230px;
+  padding: 32px 25px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  box-shadow: 0 5px 18px rgba(15, 23, 42, 0.06);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  border-color: #bfdbfe;
+  box-shadow: 0 12px 28px rgba(37, 99, 235, 0.12);
+}
+
+/* =========================================
+   FEATURE ICON
+   ========================================= */
+
+.feature-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eff6ff;
+  border-radius: 16px;
+  font-size: 32px;
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.feature-card:hover .feature-icon {
+  transform: scale(1.06);
+  background: #dbeafe;
+}
+
+/* =========================================
+   FEATURE TITLE
+   ========================================= */
+
+.feature-card h3 {
+  margin-bottom: 12px;
+  color: #1e3a8a;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+/* =========================================
+   FEATURE DESCRIPTION
+   ========================================= */
+
+.feature-card p {
+  margin: 0;
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 768px) {
+  .features {
+    padding: 65px 20px;
+  }
+
+  .features h2 {
+    font-size: 30px;
+    margin-bottom: 35px;
+  }
+
+  .feature-container {
+    gap: 20px;
+  }
+
+  .feature-card {
+    width: 290px;
+  }
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 480px) {
+  .features {
+    padding: 55px 16px;
+  }
+
+  .features h2 {
+    font-size: 27px;
+    margin-bottom: 30px;
+  }
+
+  .feature-container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-card {
+    width: 100%;
+    max-width: 340px;
+    min-height: auto;
+    padding: 28px 22px;
+  }
+
+  .feature-icon {
+    width: 58px;
+    height: 58px;
+    font-size: 29px;
+  }
+
+  .feature-card h3 {
+    font-size: 18px;
+  }
+
+  .feature-card p {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,361 @@
+/* =========================================
+   STUDENT FEEDBACK PAGE
+   Final UI Polish
+   ========================================= */
+
+.feedback-page {
+  min-height: 100vh;
+  padding: 50px 20px;
+  background:
+    radial-gradient(
+      circle at 5% 5%,
+      rgba(37, 99, 235, 0.04),
+      transparent 25%
+    ),
+    #f5f7fb;
+}
+
+.feedback-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.feedback-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.feedback-header h1 {
+  margin: 0 0 9px;
+  color: #172554;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.feedback-header p {
+  margin: 0;
+  color: #64748b;
+  font-size: 15px;
+}
+
+/* =========================================
+   FEEDBACK CARD
+   ========================================= */
+
+.feedback-card {
+  background: #ffffff;
+  padding: 35px;
+  border: 1px solid #e5e7eb;
+  border-radius: 15px;
+  box-shadow: 0 6px 22px rgba(15, 23, 42, 0.07);
+}
+
+/* =========================================
+   INTERNSHIP INFO
+   ========================================= */
+
+.internship-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 25px;
+  margin-bottom: 27px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.feedback-logo {
+  width: 62px;
+  height: 62px;
+  min-width: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #eff6ff, #dbeafe);
+  color: #2563eb;
+  border: 1px solid #bfdbfe;
+  border-radius: 12px;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.internship-info h2 {
+  margin: 0 0 5px;
+  color: #1e3a8a;
+  font-size: 20px;
+  font-weight: 750;
+}
+
+.internship-info p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* =========================================
+   RATING SECTION
+   ========================================= */
+
+.rating-section {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 5px 0;
+}
+
+.rating-section label {
+  display: block;
+  margin-bottom: 15px;
+  color: #334155;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.star {
+  border: none;
+  background: transparent;
+  color: #cbd5e1;
+  font-size: 40px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 2px;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.star:hover {
+  color: #fbbf24;
+  transform: scale(1.12);
+}
+
+.star.active {
+  color: #f59e0b;
+}
+
+.rating-text {
+  margin: 11px 0 0;
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* =========================================
+   FORM
+   ========================================= */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  color: #334155;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.form-group textarea {
+  width: 100%;
+  min-height: 130px;
+  padding: 13px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #1e293b;
+  font-family: inherit;
+  font-size: 15px;
+  line-height: 1.6;
+  resize: vertical;
+  outline: none;
+  box-sizing: border-box;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.form-group textarea::placeholder {
+  color: #94a3b8;
+}
+
+.form-group textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+/* =========================================
+   SUBMIT BUTTON
+   ========================================= */
+
+.submit-feedback-btn {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #2563eb;
+  border-radius: 9px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 5px 14px rgba(37, 99, 235, 0.18);
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.submit-feedback-btn:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.25);
+}
+
+.submit-feedback-btn:disabled {
+  background: #94a3b8;
+  border-color: #94a3b8;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* =========================================
+   BACK TO DASHBOARD
+   ========================================= */
+
+.back-dashboard {
+  display: block;
+  width: fit-content;
+  margin: 20px auto 0;
+  color: #2563eb;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 650;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.back-dashboard:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+  transform: translateY(-1px);
+}
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 700px) {
+  .feedback-page {
+    padding: 40px 18px;
+  }
+
+  .feedback-header h1 {
+    font-size: 27px;
+  }
+
+  .feedback-card {
+    padding: 28px 24px;
+  }
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+  .feedback-page {
+    padding: 30px 15px;
+  }
+
+  .feedback-header {
+    margin-bottom: 24px;
+  }
+
+  .feedback-header h1 {
+    font-size: 25px;
+  }
+
+  .feedback-header p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .feedback-card {
+    padding: 24px 18px;
+    border-radius: 13px;
+  }
+
+  .internship-info {
+    align-items: flex-start;
+    gap: 13px;
+    padding-bottom: 22px;
+    margin-bottom: 23px;
+  }
+
+  .feedback-logo {
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+    font-size: 22px;
+  }
+
+  .internship-info h2 {
+    font-size: 18px;
+  }
+
+  .internship-info p {
+    font-size: 13px;
+  }
+
+  .star {
+    font-size: 34px;
+  }
+
+  .stars {
+    gap: 4px;
+  }
+
+  .rating-section {
+    margin-bottom: 25px;
+  }
+
+  .form-group textarea {
+    min-height: 120px;
+    font-size: 14px;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+   ========================================= */
+
+@media (max-width: 380px) {
+  .feedback-page {
+    padding: 25px 12px;
+  }
+
+  .feedback-card {
+    padding: 22px 15px;
+  }
+
+  .star {
+    font-size: 30px;
+  }
+
+  .internship-info h2 {
+    font-size: 17px;
+  }
+}

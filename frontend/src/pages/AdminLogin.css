@@ -1,0 +1,138 @@
+.admin-login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  background: #f8fafc;
+}
+
+.admin-login-card {
+  width: 100%;
+  max-width: 430px;
+  padding: 40px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  box-shadow: 0 10px 35px rgba(15, 23, 42, 0.08);
+  box-sizing: border-box;
+}
+
+.admin-login-icon {
+  width: 65px;
+  height: 65px;
+  margin: 0 auto 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eff6ff;
+  border-radius: 16px;
+  font-size: 30px;
+}
+
+.admin-login-card h1 {
+  margin: 0;
+  text-align: center;
+  color: #1e3a8a;
+  font-size: 28px;
+}
+
+.admin-login-subtitle {
+  margin: 8px 0 30px;
+  text-align: center;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.admin-form-group {
+  margin-bottom: 20px;
+}
+
+.admin-form-group label {
+  display: block;
+  margin-bottom: 7px;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.admin-form-group input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  outline: none;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+.admin-form-group input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.admin-error {
+  margin-bottom: 18px;
+  padding: 10px 12px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  color: #dc2626;
+  font-size: 13px;
+}
+
+.admin-login-btn {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 9px;
+  background: #2563eb;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.admin-login-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.admin-login-btn:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.back-home-btn {
+  display: block;
+  margin: 20px auto 0;
+  padding: 8px 14px;
+  border: none;
+  background: transparent;
+  color: #64748b;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.back-home-btn:hover {
+  color: #2563eb;
+}
+
+@media (max-width: 480px) {
+  .admin-login-page {
+    padding: 20px 15px;
+  }
+
+  .admin-login-card {
+    padding: 30px 22px;
+    border-radius: 15px;
+  }
+
+  .admin-login-card h1 {
+    font-size: 24px;
+  }
+}
